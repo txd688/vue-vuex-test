@@ -1,18 +1,19 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h2 @click="$store.commit('add')">{{ $store.state.counter }}</h2>
+    <h2 @click="$store.dispatch('addAsync')">{{ $store.state.counter }}</h2>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {
-    HelloWorld,
-  },
+  components: {},
 };
 </script>
+<style scoped>
+h2 {
+  cursor: pointer;
+}
+</style>
