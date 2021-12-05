@@ -2,6 +2,8 @@
 
 vue-vuex 源码 效果简易实现
 
+主要文件地址：<https://github.com/txd688/vue-vuex-test/blob/main/src/myStore/index.js>
+
 ## Project setup
 
 ```
