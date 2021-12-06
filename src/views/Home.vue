@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="../assets/logo.png" />
     <h2 @click="$store.commit('add')">{{ $store.state.counter }}</h2>
     <h2 @click="$store.dispatch('addAsync')">{{ $store.state.counter }}</h2>
+    <h2>{{ $store.getters.getState }}</h2>
   </div>
 </template>
 
